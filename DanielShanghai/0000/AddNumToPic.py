@@ -2,6 +2,10 @@ from PIL import Image, ImageDraw, ImageFont
 __author__ = 'DanielSong'
 
 def add_num(img,number):
+
+
+
+    #生成pad和数字
     if number >= 10000:
        strNumber = '...'  
     else:
@@ -30,7 +34,11 @@ def add_num(img,number):
        NumberDraw.text((txtPosX, -3), strNumber, font=myfont, fill="#FFFFFF")
     else:
        NumberDraw.text((8, -3), strNumber, font=myfont, fill="#FFFFFF")
-    
+
+
+    #生成pad和数字 完成
+
+       
     #p.show()
     img.show()
 
